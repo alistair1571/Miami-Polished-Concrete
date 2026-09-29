@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concrete Floor Cost Calculator Miami | Polished, Epoxy &amp; More</title>
+<meta name="description" content="Estimate polished concrete, epoxy, garage, microcement, terrazzo and pool deck costs in Miami-Dade. Instant price range, then a free written quote.">
+<link rel="canonical" href="https://www.YOURDOMAIN.com/cost-calculator/">
+<meta property="og:title" content="Concrete Floor Cost Calculator Miami | Polished, Epoxy &amp; More">
+<meta property="og:description" content="Estimate polished concrete, epoxy, garage, microcement, terrazzo and pool deck costs in Miami-Dade. Instant price range, then a free written quote.">
+<meta property="og:url" content="https://www.YOURDOMAIN.com/cost-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.YOURDOMAIN.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Concrete Floor Cost Calculator Miami | Polished, Epoxy &amp; More">
+<meta name="twitter:description" content="Estimate polished concrete, epoxy, garage, microcement, terrazzo and pool deck costs in Miami-Dade. Instant price range, then a free written quote.">
+<meta name="twitter:image" content="https://www.YOURDOMAIN.com/og-image.png">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Miami Concrete Floor Cost Calculator", "url": "https://www.YOURDOMAIN.com/cost-calculator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "areaServed": "Miami-Dade County, FL"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate is the calculator?", "acceptedAnswer": {"@type": "Answer", "text": "It gives a realistic range based on typical Miami-Dade prices for the finish, size and extras you choose. The final price depends on your slab's condition, moisture and access, which a contractor confirms at a free site visit."}}, {"@type": "Question", "name": "Why is the price per square foot higher for small jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Equipment, setup and travel cost the same whether the floor is 200 or 2,000 square feet, so small jobs cost more per square foot and usually carry a minimum charge."}}, {"@type": "Question", "name": "What isn't included in the estimate?", "acceptedAnswer": {"@type": "Answer", "text": "Structural repairs, asbestos abatement, moving furniture, baseboard replacement, permits and major moisture remediation are not included. Your written quote will list them if needed."}}, {"@type": "Question", "name": "Do condo and high-rise projects cost more?", "acceptedAnswer": {"@type": "Answer", "text": "Usually a little. Restricted working hours, elevator bookings, protecting common areas and moving debris down the building add labor."}}, {"@type": "Question", "name": "How do I get an exact price?", "acceptedAnswer": {"@type": "Answer", "text": "Send your estimate with the quote form. A licensed Miami-Dade contractor will visit, test the slab and give you a written, fixed quote."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.YOURDOMAIN.com/"}, {"@type": "ListItem", "position": 2, "name": "Cost calculator", "item": "https://www.YOURDOMAIN.com/cost-calculator/"}]}</script>
+<link rel="stylesheet" href="/style.css">
+<style>
+/* ===== Cost calculator (page-specific). Uses site variables where they exist. ===== */
+.pcc{
+  padding-top: 48px !important;
+  --pcc-navy: var(--blue-deep);
+  --pcc-cyan: var(--cta);
+  --pcc-ink: var(--ink);
+  --pcc-muted: var(--ink-soft);
+  --pcc-line: var(--line);
+  --pcc-soft: var(--grey-bg);
+  --pcc-white: #ffffff;
+  color: var(--pcc-ink);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.pcc *{ box-sizing: border-box; }
+.pcc-intro{ display:none }
+.pcc-intro h1{ font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 12px; color: var(--pcc-navy); }
+.pcc-intro p{ font-size: 1.08rem; line-height: 1.6; margin: 0; color: var(--pcc-muted); }
+
+.pcc-layout{ display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 32px; align-items: start; padding-bottom: 48px; }
+@media (max-width: 900px){ .pcc-layout{ grid-template-columns: 1fr; } }
+
+.pcc-step{ border-top: 1px solid var(--pcc-line); padding: 24px 0; }
+.pcc-step:first-child{ border-top: 0; padding-top: 0; }
+.pcc-step h2{ font-size: 1.15rem; margin: 0 0 4px; color: var(--pcc-navy); display: flex; gap: 12px; align-items: baseline; }
+.pcc-num{ font-weight: 700; color: var(--pcc-cyan); min-width: 1.2em; }
+.pcc-hint{ margin: 0 0 14px 2.2em; color: var(--pcc-muted); font-size: .95rem; }
+.pcc-body{ margin-left: 2.2em; }
+@media (max-width: 520px){ .pcc-hint, .pcc-body{ margin-left: 0; } }
+
+.pcc-chips{ display: flex; flex-wrap: wrap; gap: 8px; }
+.pcc-chip{ position: relative; }
+.pcc-chip input{ position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.pcc-chip span{ display: block; padding: 10px 14px; border: 1.5px solid var(--pcc-line); border-radius: 8px; background: var(--pcc-white); font-size: .95rem; line-height: 1.3; cursor: pointer; }
+.pcc-chip input:checked + span{ border-color: var(--pcc-navy); background: var(--pcc-navy); color: var(--pcc-white); }
+.pcc-chip input:focus-visible + span{ outline: 3px solid var(--pcc-cyan); outline-offset: 2px; }
+.pcc-chip small{ display: block; font-size: .8rem; opacity: .75; margin-top: 2px; }
+
+.pcc-row{ display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+.pcc-field label{ display: block; font-size: .9rem; font-weight: 600; margin-bottom: 6px; }
+.pcc-field input[type="number"]{ width: 150px; padding: 11px 12px; font-size: 1.05rem; border: 1.5px solid var(--pcc-line); border-radius: 8px; }
+.pcc-field input:focus-visible{ outline: 3px solid var(--pcc-cyan); outline-offset: 1px; border-color: var(--pcc-navy); }
+.pcc-times{ padding-bottom: 12px; color: var(--pcc-muted); }
+.pcc-presets{ margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+.pcc-presets button{ font: inherit; font-size: .85rem; padding: 6px 10px; border: 1px solid var(--pcc-line); background: var(--pcc-soft); border-radius: 6px; cursor: pointer; color: var(--pcc-ink); }
+.pcc-presets button:hover{ border-color: var(--pcc-navy); }
+.pcc-presets button:focus-visible{ outline: 3px solid var(--pcc-cyan); outline-offset: 1px; }
+.pcc-toggle{ background: none; border: 0; padding: 0; margin-top: 10px; color: var(--pcc-navy); text-decoration: underline; font: inherit; font-size: .9rem; cursor: pointer; }
+.pcc-lw{ display: none; margin-top: 12px; }
+.pcc-lw.is-open{ display: flex; }
+.pcc-error{ color: #b42318; font-size: .9rem; margin-top: 8px; min-height: 1.2em; }
+
+.pcc-checks{ display: grid; gap: 8px; }
+.pcc-check{ display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--pcc-line); border-radius: 8px; background: var(--pcc-white); cursor: pointer; }
+.pcc-check input{ margin-top: 3px; width: 18px; height: 18px; accent-color: var(--pcc-navy); flex: none; }
+.pcc-check strong{ display: block; font-weight: 600; font-size: .95rem; }
+.pcc-check em{ font-style: normal; font-size: .85rem; color: var(--pcc-muted); }
+.pcc-lf{ display: none; margin: 4px 0 0 28px; }
+.pcc-lf.is-open{ display: block; }
+.pcc-lf input{ width: 120px; padding: 8px 10px; border: 1.5px solid var(--pcc-line); border-radius: 6px; font-size: 1rem; }
+
+/* Result panel */
+.pcc-result{ position: sticky; top: 96px; background: var(--pcc-navy); color: var(--pcc-white); border-radius: 12px; padding: 24px; }
+@media (max-width: 900px){ .pcc-result{ position: static; } }
+.pcc-result h2{ font-size: 1rem; font-weight: 600; margin: 0 0 6px; color: #C6D3E6; }
+.pcc-total{ font-size: clamp(1.9rem, 5vw, 2.4rem); font-weight: 700; line-height: 1.1; margin: 0; font-variant-numeric: tabular-nums; }
+.pcc-persf{ margin: 6px 0 18px; opacity: .85; font-variant-numeric: tabular-nums; }
+
+/* Signature: the grit scale. Where your range sits between the cheapest and most expensive Miami floors. */
+.pcc-scale{ margin: 0 0 20px; }
+.pcc-track{ position: relative; height: 14px; border-radius: 7px; background: repeating-linear-gradient(90deg, rgba(255,255,255,.14) 0 2px, rgba(255,255,255,.06) 2px 12.5%); }
+.pcc-fill{ position: absolute; top: 0; bottom: 0; border-radius: 7px; background: var(--pcc-cyan); transition: left .35s ease, width .35s ease; }
+.pcc-scale-labels{ display: flex; justify-content: space-between; font-size: .75rem; opacity: .7; margin-top: 6px; }
+@media (prefers-reduced-motion: reduce){ .pcc-fill{ transition: none; } }
+
+.pcc-lines{ list-style: none; margin: 0 0 16px; padding: 14px 0 0; border-top: 1px solid rgba(255,255,255,.2); font-size: .9rem; }
+.pcc-lines li{ display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; }
+.pcc-lines span:last-child{ white-space: nowrap; font-variant-numeric: tabular-nums; opacity: .9; }
+.pcc-notes{ list-style: none; margin: 0 0 18px; padding: 0; font-size: .85rem; }
+.pcc-notes li{ padding: 8px 10px; background: rgba(255,255,255,.08); border-left: 3px solid var(--pcc-cyan); border-radius: 4px; margin-bottom: 6px; line-height: 1.45; }
+.pcc-cta{ display: block; text-align: center; padding: 14px 16px; background: var(--pcc-cyan); color: var(--cta-text); font-weight: 700; border-radius: 8px; text-decoration: none; }
+.pcc-cta:hover{ filter: brightness(1.06); }
+.pcc-cta:focus-visible{ outline: 3px solid var(--pcc-white); outline-offset: 2px; }
+.pcc-small{ font-size: .78rem; opacity: .75; margin: 12px 0 0; line-height: 1.45; }
+
+/* Content below the tool */
+.pcc-content{ max-width: 720px; margin: 0 auto; padding: 8px 0 56px; }
+.pcc-content h2{ color: var(--pcc-navy); font-size: 1.45rem; margin: 36px 0 12px; }
+.pcc-content p, .pcc-content li{ line-height: 1.65; }
+.pcc-content table{ width: 100%; border-collapse: collapse; font-size: .95rem; }
+.pcc-content th, .pcc-content td{ text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--pcc-line); vertical-align: top; }
+.pcc-content .pcc-tablewrap{ overflow-x: auto; }
+.pcc-content details{ border-bottom: 1px solid var(--pcc-line); padding: 14px 0; }
+.pcc-content summary{ font-weight: 600; cursor: pointer; color: var(--pcc-navy); }
+.pcc-content details p{ margin: 10px 0 0; }
+
+.pcc-content a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.pcc-content ul{margin:0 0 16px 20px;color:var(--ink-soft)}
+.pcc-content p{color:var(--ink-soft);margin-bottom:14px}
+@media(max-width:600px){.pcc{padding:0 18px}.pcc-result{padding:20px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="container">
+    <span>Polished concrete across Miami-Dade</span>
+    <span>Free Assessments: <a href="tel:+13055550142">(305) 555-0142</a></span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo"><img src="/images/logo-dark.png" alt="Miami Polished Concrete" height="36"></a>
+    <ul class="nav-links" id="site-nav">
+      <li class="dropdown">
+        <a href="/services/">Services</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-heading">Polished concrete</li><li><a href="/polished-concrete/">How Polishing Works</a></li><li><a href="/residential-polished-concrete/">Residential</a></li><li><a href="/commercial-polished-concrete/">Commercial &amp; Warehouse</a></li><li><a href="/polished-concrete-maintenance/">Maintenance &amp; Restoration</a></li><li class="dropdown-heading">Other finishes</li><li><a href="/microcement/">Microcement</a></li><li><a href="/epoxy-flooring/">Epoxy Flooring</a></li><li><a href="/garage-floors/">Garage Floors</a></li><li><a href="/concrete-staining/">Acid Stain &amp; Staining</a></li><li class="dropdown-heading">Restoration &amp; outdoor</li><li><a href="/terrazzo-restoration/">Terrazzo Restoration</a></li><li><a href="/concrete-resurfacing/">Concrete Resurfacing</a></li><li><a href="/pool-deck-resurfacing/">Pool Deck Resurfacing</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/areas/">Areas</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-heading">North</li><li><a href="/areas/aventura/">Aventura</a></li><li><a href="/areas/miami-shores/">Miami Shores</a></li><li class="dropdown-heading">Beaches</li><li><a href="/areas/miami-beach/">Miami Beach</a></li><li><a href="/areas/key-biscayne-surfside/">Key Biscayne &amp; Surfside</a></li><li class="dropdown-heading">Central</li><li><a href="/areas/brickell/">Brickell</a></li><li><a href="/areas/downtown-edgewater/">Downtown &amp; Edgewater</a></li><li><a href="/areas/wynwood/">Wynwood</a></li><li><a href="/areas/coconut-grove/">Coconut Grove</a></li><li class="dropdown-heading">West</li><li><a href="/areas/doral/">Doral</a></li><li><a href="/areas/hialeah/">Hialeah</a></li><li><a href="/areas/medley/">Medley</a></li><li><a href="/areas/miami-lakes/">Miami Lakes</a></li><li class="dropdown-heading">South</li><li><a href="/areas/coral-gables/">Coral Gables</a></li><li><a href="/areas/pinecrest/">Pinecrest</a></li><li><a href="/areas/kendall/">Kendall</a></li><li><a href="/areas/palmetto-bay-cutler-bay/">Palmetto Bay &amp; Cutler Bay</a></li><li><a href="/areas/homestead/">Homestead</a></li><li class="dropdown-heading">All</li><li><a href="/areas/">All areas</a></li>
+        </ul>
+      </li>
+      <li><a href="/commercial-polished-concrete/">Commercial</a></li>
+      <li><a href="/cost-calculator/">Cost Calculator</a></li>
+      <li><a href="/how-it-works/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <div class="header-cta">
+      <a href="tel:+13055550142" class="header-phone">(305) 555-0142</a>
+      <a href="/contact/" class="btn">Get a Quote</a>
+      <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">&#9776;</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="inner-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / <span>Cost calculator</span></div>
+    <h1>Concrete Floor Cost Calculator for Miami</h1>
+    <p class="lead">Pick your floor, enter the size and add any extras. You'll get a realistic price range for Miami-Dade in seconds, then you can send it to a licensed local contractor for a free written quote.</p>
+    <div class="hero-cta"><a href="#calculator" class="btn btn-lg">Start estimating</a><a href="tel:+13055550142" class="btn btn-lg btn-outline">Call (305) 555-0142</a></div>
+  </div>
+</section>
+<div class="trust-bar"><div class="container"><span>Typical Miami-Dade prices</span><span>Checked against published local ranges</span><span>Free written quote to confirm</span><span>No obligation</span></div></div>
+<section class="section" id="calculator" style="padding-top:0"><div class="pcc">
+<div class="pcc-layout">
+
+    <form class="pcc-form" id="pcc-form" novalidate>
+
+      <section class="pcc-step">
+        <h2><span class="pcc-num">1</span>What are you doing?</h2>
+        <p class="pcc-hint">Choose the closest match.</p>
+        <div class="pcc-body pcc-chips" id="pcc-services" role="radiogroup" aria-label="Project type"></div>
+      </section>
+
+      <section class="pcc-step">
+        <h2><span class="pcc-num">2</span>Choose a finish</h2>
+        <p class="pcc-hint" id="pcc-finish-hint">Not sure? The first option is the most popular.</p>
+        <div class="pcc-body pcc-chips" id="pcc-finishes" role="radiogroup" aria-label="Finish"></div>
+      </section>
+
+      <section class="pcc-step">
+        <h2><span class="pcc-num">3</span>How big is it?</h2>
+        <p class="pcc-hint">Square feet. Use a preset, or enter length and width.</p>
+        <div class="pcc-body">
+          <div class="pcc-row">
+            <div class="pcc-field">
+              <label for="pcc-sqft">Area (sq ft)</label>
+              <input type="number" id="pcc-sqft" inputmode="numeric" min="50" max="200000" step="10" value="450">
+            </div>
+          </div>
+          <div class="pcc-presets" id="pcc-presets" aria-label="Common sizes"></div>
+          <button type="button" class="pcc-toggle" id="pcc-lw-toggle" aria-expanded="false" aria-controls="pcc-lw">Enter length and width instead</button>
+          <div class="pcc-lw pcc-row" id="pcc-lw">
+            <div class="pcc-field">
+              <label for="pcc-len">Length (ft)</label>
+              <input type="number" id="pcc-len" inputmode="decimal" min="1" step="0.5">
+            </div>
+            <span class="pcc-times" aria-hidden="true">×</span>
+            <div class="pcc-field">
+              <label for="pcc-wid">Width (ft)</label>
+              <input type="number" id="pcc-wid" inputmode="decimal" min="1" step="0.5">
+            </div>
+          </div>
+          <p class="pcc-error" id="pcc-error" role="alert"></p>
+        </div>
+      </section>
+
+      <section class="pcc-step">
+        <h2><span class="pcc-num">4</span>Anything extra?</h2>
+        <p class="pcc-hint">Tick what applies. Leave blank if you're not sure.</p>
+        <div class="pcc-body pcc-checks" id="pcc-addons"></div>
+      </section>
+
+      <section class="pcc-step">
+        <h2><span class="pcc-num">5</span>About the space</h2>
+        <p class="pcc-hint">These change labor and prep time.</p>
+        <div class="pcc-body">
+          <p class="pcc-field"><label>Condition of the concrete</label></p>
+          <div class="pcc-chips" role="radiogroup" aria-label="Condition">
+            <label class="pcc-chip"><input type="radio" name="condition" value="good" checked><span>Good<small>Few marks or cracks</small></span></label>
+            <label class="pcc-chip"><input type="radio" name="condition" value="fair"><span>Some cracks or patches</span></label>
+            <label class="pcc-chip"><input type="radio" name="condition" value="poor"><span>Lots of damage</span></label>
+            <label class="pcc-chip"><input type="radio" name="condition" value="unknown"><span>Can't see it yet<small>Under tile or carpet</small></span></label>
+          </div>
+
+          <p class="pcc-field" style="margin-top:18px"><label>Where is it?</label></p>
+          <div class="pcc-chips" role="radiogroup" aria-label="Access">
+            <label class="pcc-chip"><input type="radio" name="access" value="standard" checked><span>House or ground floor</span></label>
+            <label class="pcc-chip"><input type="radio" name="access" value="highrise"><span>Condo or high-rise</span></label>
+            <label class="pcc-chip"><input type="radio" name="access" value="afterhours"><span>Business, nights or weekends</span></label>
+          </div>
+
+          <label class="pcc-check" style="margin-top:18px">
+            <input type="checkbox" id="pcc-old">
+            <span><strong>Building is older than about 1985</strong><em>Old tile and adhesives should be tested for asbestos before removal.</em></span>
+          </label>
+        </div>
+      </section>
+
+    </form>
+
+    <aside class="pcc-result" aria-live="polite" aria-atomic="true">
+      <h2 id="pcc-result-title">Estimated cost</h2>
+      <p class="pcc-total" id="pcc-total">—</p>
+      <p class="pcc-persf" id="pcc-persf"></p>
+
+      <div class="pcc-scale" aria-hidden="true">
+        <div class="pcc-track"><div class="pcc-fill" id="pcc-fill"></div></div>
+        <div class="pcc-scale-labels"><span>$2 / sq ft</span><span>$30+ / sq ft</span></div>
+      </div>
+
+      <ul class="pcc-lines" id="pcc-lines"></ul>
+      <ul class="pcc-notes" id="pcc-notes"></ul>
+
+      <a class="pcc-cta" id="pcc-cta" href="/contact/">Get a free written quote</a>
+      <p class="pcc-small">Estimates use typical Miami-Dade prices and aren't a quote. The final price is confirmed after a free site visit and slab test.</p>
+    </aside>
+
+  </div>
+
+  
+</div></section>
+<section class="section bg-light"><div class="pcc"><div class="pcc-content">
+
+    <h2>How the estimate works</h2>
+    <p>Each finish has a typical Miami-Dade price range per square foot. The calculator multiplies that by your area, adds any extras you tick, then adjusts for size, the slab's condition and access. Small jobs cost more per square foot because equipment and setup cost the same either way, and very large floors cost less.</p>
+
+    <h2>What's not included</h2>
+    <p>Your written quote will list these separately if your project needs them:</p>
+    <ul>
+      <li>Structural repairs, or lifting sunken or root-damaged slabs</li>
+      <li>Asbestos testing results and any abatement</li>
+      <li>Major moisture remediation beyond a moisture-blocking primer</li>
+      <li>Moving furniture, new baseboards and door trimming</li>
+      <li>Permits, association fees and engineer's reports</li>
+    </ul>
+
+    <h2>Typical Miami-Dade prices</h2>
+    <p>The ranges the calculator uses for the most common finishes. See the <a href="/guides/polished-concrete-cost-miami/">full Miami cost guide</a> for what drives each price up or down.</p>
+    <div class="pcc-tablewrap">
+      <table id="pcc-table">
+        <thead><tr><th scope="col">Floor</th><th scope="col">Finish</th><th scope="col">Per sq ft</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h2>Questions about the calculator</h2>
+    <details class="faq"><summary>How accurate is the calculator?</summary><p>It gives a realistic range based on typical Miami-Dade prices for the finish, size and extras you choose. The final price depends on your slab's condition, moisture and access, which a contractor confirms at a free site visit.</p></details>
+    <details class="faq"><summary>Why is the price per square foot higher for small jobs?</summary><p>Equipment, setup and travel cost the same whether the floor is 200 or 2,000 square feet, so small jobs cost more per square foot and usually carry a minimum charge.</p></details>
+    <details class="faq"><summary>What isn't included in the estimate?</summary><p>Structural repairs, asbestos abatement, moving furniture, baseboard replacement, permits and major moisture remediation. Your written quote will list them if needed.</p></details>
+    <details class="faq"><summary>Do condo and high-rise projects cost more?</summary><p>Usually a little. Restricted working hours, elevator bookings, protecting common areas and moving debris down the building add labor.</p></details>
+    <details class="faq"><summary>How do I get an exact price?</summary><p>Send your estimate with the quote form. A licensed Miami-Dade contractor will visit, test the slab and give you a written, fixed quote.</p></details>
+
+    <h2>Learn more before you decide</h2>
+    <ul>
+      <li><a href="/polished-concrete/">How concrete polishing works</a></li>
+      <li><a href="/residential-polished-concrete/">Polished concrete for homes</a></li>
+      <li><a href="/garage-floors/">Garage floors: epoxy, flake and polyaspartic</a></li>
+      <li><a href="/epoxy-flooring/">Epoxy flooring for businesses</a></li>
+      <li><a href="/microcement/">Microcement for condos and bathrooms</a></li>
+      <li><a href="/pool-deck-resurfacing/">Pool deck resurfacing</a></li>
+    </ul>
+
+    
+  </div>
+
+</div></section>
+<section class="section bg-light"><div class="container" style="max-width:760px">
+  <div class="section-head" style="text-align:left;margin-left:0"><h2>How Miami Polished Concrete works</h2></div>
+  <p>We're upfront about this: Miami Polished Concrete is a <strong>lead generation website</strong>. We don't carry out any work. When you get in touch, we pass your enquiry to <strong>one</strong> licensed, insured Miami-Dade contractor, currently <span>[Partner company]</span>, who assesses, quotes and completes the job directly with you. The contractor pays us for the enquiries we send; you pay us nothing, and we add nothing to their price. Your details are never sold or passed to multiple companies.</p>
+  <p><a href="/how-it-works/">How this works, how we're paid and who's responsible for what</a></p>
+</div></section>
+<section class="form-section" id="quote">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-side">
+        <h2>Get an exact price</h2>
+        <p>Send your estimate and a few details. A licensed local contractor will visit, test the slab and give you a written, fixed quote.</p>
+        <ul><li>Free on-site assessment and moisture check</li><li>Written, itemized quote before any work starts</li><li>No obligation to go ahead</li></ul>
+      </div>
+      <div class="form-body">
+        <h3>Request a quote</h3>
+        <p class="form-sub">Or call <a href="tel:+13055550142">(305) 555-0142</a> directly.</p>
+        <form action="https://formspree.io/f/YOURFORMID" method="POST" class="leadForm">
+          <input type="hidden" name="_subject" value="New polished concrete lead - Miami Polished Concrete">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field-row">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" type="text" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone number</label><input id="f-phone" type="tel" name="phone" autocomplete="tel" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email"></div>
+            <div class="field"><label for="f-zip">ZIP code</label><input id="f-zip" type="text" name="zip" inputmode="numeric" placeholder="e.g. 33166" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-type">Type of space</label>
+              <select id="f-type" name="project_type" required>
+                <option value="">Select</option>
+                <option>Home interior</option><option>Garage</option><option>Condo unit</option>
+                <option>Pool deck, patio or driveway</option>
+                <option>Warehouse or industrial</option><option>Retail, showroom or office</option>
+                <option>Restaurant</option><option>Not sure / other</option>
+              </select></div>
+            <div class="field"><label for="f-size">Approximate size</label>
+              <select id="f-size" name="size">
+                <option value="">Select</option>
+                <option>Under 500 sq ft</option><option>500 to 1,500 sq ft</option>
+                <option>1,500 to 5,000 sq ft</option><option>5,000 to 20,000 sq ft</option>
+                <option>Over 20,000 sq ft</option><option>Not sure</option>
+              </select></div>
+          </div>
+          <div class="field"><label for="f-year">Year the building was built (if known)</label><input id="f-year" type="text" name="year_built" inputmode="numeric" placeholder="e.g. 1972. Helps us check for old adhesives"></div>
+          <div class="field"><label for="f-details">What's on the floor now, and what finish do you want? (optional)</label><textarea id="f-details" name="details" rows="3" placeholder="e.g. removing tile, want a satin salt-and-pepper look"></textarea></div>
+          <label><input type="checkbox" name="consent" value="yes" required> I agree that Miami Polished Concrete can share my details with one licensed contractor so they can contact me about this project.</label>
+          <button type="submit" class="form-submit">Request my quote</button>
+          <p class="form-fineprint">We don't sell your details or pass them to more than one contractor. See our <a href="/privacy/">privacy policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section"><div class="container"><p>Last reviewed September 2026 by <span>[Partner name]</span>, <span>[Company]</span>, <span>[FL licence #]</span>.</p></div></section>
+<script>
+(function () {
+  /* =================================================================
+     PRICES. Edit these to match /guides/polished-concrete-cost-miami/
+     and the partner's real pricing. All figures are USD.
+     lo / hi = per sq ft range for the finish.
+     ================================================================= */
+  var CONFIG = {
+    minimumJob: 1500,          // minimum charge for any job
+    roundTo: 50,               // round totals to nearest $50
+    asbestosTest: [100, 300],  // flat range if building is pre-1985 and removal is ticked
+    scaleMin: 2,               // left end of the result scale ($/sq ft)
+    scaleMax: 30               // right end
+  };
+
+  var ADDONS = {
+    tile:     { label: "Tile and thinset removal", note: "Includes disposal", type: "sqft", lo: 2,    hi: 7 },
+    carpet:   { label: "Carpet and tack strip removal", note: "Tack-strip holes are filled", type: "sqft", lo: 1, hi: 5 },
+    coating:  { label: "Remove old coating, paint or sealer", note: "Needed for a proper bond", type: "sqft", lo: 1.5,  hi: 3.5 },
+    moisture: { label: "Moisture-blocking primer", note: "Common on Miami ground-floor slabs", type: "sqft", lo: 1.1,  hi: 1.8 },
+    dye:      { label: "Color: dye or stain", note: "Adds color to the finish", type: "sqft", lo: 1,    hi: 3 },
+    antislip: { label: "Anti-slip additive", note: "Recommended for wet areas", type: "sqft", lo: 0.25, hi: 0.75 },
+    sound:    { label: "Sound-rated underlayment and board", note: "Usually required in condos", type: "sqft", lo: 4,    hi: 8 },
+    rust:     { label: "Rust and stain treatment", note: "For irrigation and leaf stains", type: "sqft", lo: 0.5,  hi: 1.5 },
+    stem:     { label: "Coat the stem walls", note: "The low curb around garage walls", type: "lf", lo: 6, hi: 12, lfDefault: 60 },
+    cove:     { label: "Integral cove base", note: "Floor-to-wall seal for kitchens and clinics", type: "lf", lo: 10, hi: 18, lfDefault: 100 }
+  };
+
+  var SERVICES = [
+    { id: "polished", label: "Polished concrete", sub: "Homes and businesses", addons: ["tile", "carpet", "coating", "dye", "antislip"], finishes: [
+      { id: "satin",     label: "Salt and pepper, satin", lo: 4, hi: 7 },
+      { id: "gloss",     label: "Semi-gloss to high gloss", lo: 5, hi: 12 },
+      { id: "aggregate", label: "Exposed aggregate", sub: "Terrazzo look", lo: 8, hi: 15 },
+      { id: "grindseal", label: "Grind and seal / matte", sub: "Budget option", lo: 3, hi: 5 }
+    ]},
+    { id: "microcement", label: "Microcement", sub: "Condos, bathrooms, over tile", addons: ["tile", "sound", "antislip"], finishes: [
+      { id: "floors", label: "Floors", lo: 14, hi: 30 },
+      { id: "walls",  label: "Walls and showers", sub: "Waterproofed", lo: 16, hi: 34 }
+    ]},
+    { id: "garage", label: "Garage floor", sub: "Epoxy, flake, polished", addons: ["coating", "moisture", "antislip", "stem"], finishes: [
+      { id: "flake",    label: "Flake with polyaspartic topcoat", lo: 6, hi: 10 },
+      { id: "oneday",   label: "One-day polyaspartic flake", lo: 7, hi: 11 },
+      { id: "solid",    label: "Solid color epoxy", lo: 4, hi: 7 },
+      { id: "metallic", label: "Metallic epoxy", lo: 9, hi: 14 },
+      { id: "gpolish",  label: "Polished concrete", lo: 3.5, hi: 6 }
+    ]},
+    { id: "epoxy", label: "Commercial epoxy", sub: "Kitchens, warehouses, clinics", addons: ["coating", "moisture", "antislip", "cove"], finishes: [
+      { id: "highbuild", label: "High-build epoxy", lo: 5, hi: 9 },
+      { id: "quartz",    label: "Quartz broadcast", sub: "Slip resistant", lo: 7, hi: 12 },
+      { id: "urethane",  label: "Urethane cement", sub: "Commercial kitchens", lo: 9, hi: 15 },
+      { id: "esd",       label: "Anti-static (ESD)", lo: 10, hi: 16 }
+    ]},
+    { id: "terrazzo", label: "Terrazzo restoration", sub: "Original Miami terrazzo", addons: ["carpet", "tile"], finishes: [
+      { id: "restore", label: "Restore and polish", lo: 3, hi: 8 },
+      { id: "repairs", label: "Restore with repairs", sub: "Glue removal, missing areas", lo: 5, hi: 20 }
+    ]},
+    { id: "staining", label: "Stained concrete", sub: "Acid or water-based", addons: ["coating", "antislip"], finishes: [
+      { id: "stainseal",     label: "Stain and seal, interior", lo: 3, hi: 6 },
+      { id: "stainpolish",   label: "Stained polished concrete", lo: 6, hi: 12 },
+      { id: "stainexterior", label: "Stain and seal, patio", sub: "With anti-slip", lo: 3, hi: 6 }
+    ]},
+    { id: "resurfacing", label: "Concrete resurfacing", sub: "Driveways, patios, walkways", addons: ["coating", "rust", "antislip"], finishes: [
+      { id: "knockdown", label: "Spray knockdown", lo: 4, hi: 7 },
+      { id: "skim",      label: "Skim coat resurfacer", lo: 3, hi: 5 },
+      { id: "stencil",   label: "Stenciled overlay", lo: 5, hi: 10 },
+      { id: "stamped",   label: "Stamped overlay", lo: 8, hi: 14 }
+    ]},
+    { id: "pooldeck", label: "Pool deck", sub: "Resurfacing", addons: ["coating", "rust", "antislip"], finishes: [
+      { id: "cooldeck",  label: "Cool deck or knockdown", lo: 4, hi: 7 },
+      { id: "pflake",    label: "Flake or quartz, UV topcoat", lo: 7, hi: 11 },
+      { id: "pstamped",  label: "Stamped overlay", lo: 8, hi: 14 }
+    ]}
+  ];
+
+  var PRESETS = {
+    polished:    [["One room", 200], ["Living and kitchen", 800], ["Whole home", 1800], ["Retail unit", 3000]],
+    microcement: [["Bathroom", 60], ["Condo living area", 600], ["Whole condo", 1200]],
+    garage:      [["1-car", 250], ["2-car", 450], ["3-car", 650]],
+    epoxy:       [["Small kitchen", 400], ["Restaurant kitchen", 1200], ["Warehouse", 10000]],
+    terrazzo:    [["One room", 200], ["Living areas", 900], ["Whole home", 1800]],
+    staining:    [["Patio", 300], ["Living areas", 900], ["Whole home", 1800]],
+    resurfacing: [["Walkway", 150], ["Patio", 300], ["2-car driveway", 600]],
+    pooldeck:    [["Small deck", 400], ["Average deck", 700], ["Large deck", 1200]]
+  };
+
+  var CONDITION = { good: 1.0, fair: 1.08, poor: 1.2, unknown: 1.08 };
+  var ACCESS    = { standard: 1.0, highrise: 1.15, afterhours: 1.2 };
+
+  function sizeFactor(sqft) {
+    if (sqft < 300)   return 1.2;
+    if (sqft < 600)   return 1.1;
+    if (sqft <= 2500) return 1.0;
+    if (sqft <= 10000) return 0.9;
+    return 0.8;
+  }
+
+  /* ---------- helpers ---------- */
+  var $ = function (id) { return document.getElementById(id); };
+  var money = function (n) { return "$" + Math.round(n).toLocaleString("en-US"); };
+  var round = function (n) { return Math.round(n / CONFIG.roundTo) * CONFIG.roundTo; };
+  var fmtN = function (n) { return n % 1 ? n.toFixed(2) : String(n); };
+  var perSf = function (n) { return "$" + (Math.round(n * 100) / 100).toFixed(2); };
+
+  var state = { service: SERVICES[0].id, finish: SERVICES[0].finishes[0].id, addons: {}, lf: {} };
+
+  function getService() {
+    for (var i = 0; i < SERVICES.length; i++) if (SERVICES[i].id === state.service) return SERVICES[i];
+    return SERVICES[0];
+  }
+  function getFinish(svc) {
+    for (var i = 0; i < svc.finishes.length; i++) if (svc.finishes[i].id === state.finish) return svc.finishes[i];
+    return svc.finishes[0];
+  }
+  function chip(name, value, label, sub, checked) {
+    return '<label class="pcc-chip"><input type="radio" name="' + name + '" value="' + value + '"' + (checked ? " checked" : "") + '><span>' + label + (sub ? "<small>" + sub + "</small>" : "") + "</span></label>";
+  }
+
+  /* ---------- render controls ---------- */
+  function renderServices() {
+    $("pcc-services").innerHTML = SERVICES.map(function (s) {
+      return chip("service", s.id, s.label, s.sub, s.id === state.service);
+    }).join("");
+  }
+  function renderFinishes() {
+    var svc = getService();
+    $("pcc-finishes").innerHTML = svc.finishes.map(function (f) {
+      var sub = (f.sub ? f.sub + ", " : "") + "$" + fmtN(f.lo) + " to $" + fmtN(f.hi) + "/sq ft";
+      return chip("finish", f.id, f.label, sub, f.id === state.finish);
+    }).join("");
+  }
+  function renderPresets() {
+    var list = PRESETS[state.service] || [];
+    $("pcc-presets").innerHTML = list.map(function (p) {
+      return '<button type="button" data-sqft="' + p[1] + '">' + p[0] + " · " + p[1].toLocaleString("en-US") + " sq ft</button>";
+    }).join("");
+  }
+  function renderAddons() {
+    var svc = getService();
+    $("pcc-addons").innerHTML = svc.addons.map(function (key) {
+      var a = ADDONS[key];
+      var price = "$" + fmtN(a.lo) + " to $" + fmtN(a.hi) + (a.type === "lf" ? " per linear ft" : " per sq ft");
+      var lf = "";
+      if (a.type === "lf") {
+        var v = state.lf[key] || a.lfDefault;
+        lf = '<div class="pcc-lf' + (state.addons[key] ? " is-open" : "") + '" id="pcc-lf-' + key + '"><label>Linear feet <input type="number" min="1" step="1" data-lf="' + key + '" value="' + v + '"></label></div>';
+      }
+      return '<div><label class="pcc-check"><input type="checkbox" data-addon="' + key + '"' + (state.addons[key] ? " checked" : "") + '><span><strong>' + a.label + "</strong><em>" + a.note + " · " + price + "</em></span></label>" + lf + "</div>";
+    }).join("");
+  }
+  function renderTable() {
+    var rows = [];
+    SERVICES.forEach(function (s) {
+      s.finishes.forEach(function (f, i) {
+        rows.push("<tr><td>" + (i === 0 ? s.label : "") + "</td><td>" + f.label + "</td><td>$" + fmtN(f.lo) + " to $" + fmtN(f.hi) + "</td></tr>");
+      });
+    });
+    document.querySelector("#pcc-table tbody").innerHTML = rows.join("");
+  }
+
+  /* ---------- calculate ---------- */
+  function readSqft() {
+    var v = parseFloat($("pcc-sqft").value);
+    if (!isFinite(v) || v < 50) { $("pcc-error").textContent = "Enter an area of at least 50 sq ft."; return null; }
+    if (v > 200000) { $("pcc-error").textContent = "For floors over 200,000 sq ft, request a site survey for a custom quote."; return null; }
+    $("pcc-error").textContent = "";
+    return v;
+  }
+
+  function calculate() {
+    var svc = getService();
+    var fin = getFinish(svc);
+    var sqft = readSqft();
+    var lines = $("pcc-lines"), notes = $("pcc-notes");
+
+    if (sqft === null) {
+      $("pcc-total").textContent = "—";
+      $("pcc-persf").textContent = "";
+      lines.innerHTML = ""; notes.innerHTML = "";
+      $("pcc-fill").style.width = "0";
+      return;
+    }
+
+    var condition = document.querySelector('input[name="condition"]:checked').value;
+    var access = document.querySelector('input[name="access"]:checked').value;
+    var old = $("pcc-old").checked;
+
+    var baseLo = fin.lo * sqft, baseHi = fin.hi * sqft;
+    var out = [[fin.label + " · " + sqft.toLocaleString("en-US") + " sq ft", baseLo, baseHi]];
+    var extraLo = 0, extraHi = 0, hasRemoval = false;
+
+    svc.addons.forEach(function (key) {
+      if (!state.addons[key]) return;
+      var a = ADDONS[key], lo, hi;
+      if (a.type === "lf") {
+        var lf = parseFloat(state.lf[key] || a.lfDefault) || 0;
+        lo = a.lo * lf; hi = a.hi * lf;
+        out.push([a.label + " · " + lf + " ft", lo, hi]);
+      } else {
+        lo = a.lo * sqft; hi = a.hi * sqft;
+        out.push([a.label, lo, hi]);
+      }
+      if (key === "tile" || key === "carpet" || key === "coating") hasRemoval = true;
+      extraLo += lo; extraHi += hi;
+    });
+
+    var mult = sizeFactor(sqft) * CONDITION[condition] * ACCESS[access];
+    var lo = (baseLo + extraLo) * mult;
+    var hi = (baseHi + extraHi) * mult;
+
+    var adj = [];
+    var sf = sizeFactor(sqft);
+    if (sf > 1) adj.push("small job " + "+" + Math.round((sf - 1) * 100) + "%");
+    if (sf < 1) adj.push("large area " + "−" + Math.round((1 - sf) * 100) + "%");
+    if (CONDITION[condition] > 1) adj.push("repairs +" + Math.round((CONDITION[condition] - 1) * 100) + "%");
+    if (ACCESS[access] > 1) adj.push((access === "highrise" ? "high-rise" : "after-hours") + " +" + Math.round((ACCESS[access] - 1) * 100) + "%");
+    if (adj.length) out.push(["Adjustments: " + adj.join(", "), (baseLo + extraLo) * (mult - 1), (baseHi + extraHi) * (mult - 1)]);
+
+    if (old && hasRemoval) {
+      lo += CONFIG.asbestosTest[0]; hi += CONFIG.asbestosTest[1];
+      out.push(["Asbestos testing", CONFIG.asbestosTest[0], CONFIG.asbestosTest[1]]);
+    }
+
+    var minApplied = false;
+    if (lo < CONFIG.minimumJob) { lo = CONFIG.minimumJob; minApplied = true; }
+    if (hi < CONFIG.minimumJob) { hi = CONFIG.minimumJob; }
+
+    lo = round(lo); hi = round(hi);
+    var flatMin = hi <= CONFIG.minimumJob;
+    if (!flatMin && hi <= lo) hi = lo + CONFIG.roundTo;
+
+    if (flatMin) {
+      $("pcc-total").textContent = "About " + money(CONFIG.minimumJob);
+      $("pcc-persf").textContent = "Minimum job charge applies at this size";
+    } else {
+      $("pcc-total").textContent = money(lo) + " to " + money(hi);
+      $("pcc-persf").textContent = "About " + perSf(lo / sqft) + " to " + perSf(hi / sqft) + " per sq ft all in";
+    }
+
+    lines.innerHTML = out.map(function (l) {
+      var range = (Math.abs(l[1]) < 1 && Math.abs(l[2]) < 1) ? "" : (l[1] < 0 ? "−" + money(-l[1]) + " to −" + money(-l[2]) : money(l[1]) + " to " + money(l[2]));
+      return "<li><span>" + l[0] + "</span><span>" + range + "</span></li>";
+    }).join("");
+
+    /* notes */
+    var n = [];
+    if (minApplied) n.push("Small jobs carry a minimum charge of about " + money(CONFIG.minimumJob) + ".");
+    var coatings = ["garage", "epoxy"];
+    if (coatings.indexOf(svc.id) > -1 && !state.addons.moisture) n.push("Miami slabs often carry moisture. Ask for a moisture test; a moisture-blocking primer may be needed.");
+    if (access === "highrise" && ["polished", "terrazzo", "staining"].indexOf(svc.id) > -1) n.push("In most high-rises, association rules and post-tensioned slabs make microcement over a sound-rated layer the usual route.");
+    if (svc.id === "microcement" && access === "highrise" && !state.addons.sound) n.push("Most condo associations require sound-rated underlayment under hard floors.");
+    if (old && (state.addons.tile || state.addons.carpet)) n.push("Older homes may have terrazzo under tile or carpet. It's often worth restoring.");
+    if (condition === "unknown") n.push("We've allowed for some repairs. The range will tighten once the slab is visible.");
+    if (svc.id === "pooldeck" || svc.id === "resurfacing") n.push("Sunken, lifted or root-damaged sections need repair or replacement before resurfacing, which isn't included.");
+    notes.innerHTML = n.map(function (t) { return "<li>" + t + "</li>"; }).join("");
+
+    /* scale */
+    var a = Math.max(0, Math.min(1, ((lo / sqft) - CONFIG.scaleMin) / (CONFIG.scaleMax - CONFIG.scaleMin)));
+    var b = Math.max(0, Math.min(1, ((hi / sqft) - CONFIG.scaleMin) / (CONFIG.scaleMax - CONFIG.scaleMin)));
+    if (b - a < 0.03) b = Math.min(1, a + 0.03);
+    $("pcc-fill").style.left = (a * 100) + "%";
+    $("pcc-fill").style.width = ((b - a) * 100) + "%";
+
+    /* CTA carries the estimate to the quote form */
+    var extras = svc.addons.filter(function (k) { return state.addons[k]; }).map(function (k) { return ADDONS[k].label; }).join(", ");
+    var params = new URLSearchParams({
+      service: svc.label,
+      finish: fin.label,
+      sqft: String(Math.round(sqft)),
+      extras: extras,
+      estimate: flatMin ? "About " + money(CONFIG.minimumJob) : money(lo) + " to " + money(hi),
+      source: "cost-calculator"
+    });
+    $("pcc-cta").href = "/contact/?" + params.toString();
+  }
+
+  /* ---------- events ---------- */
+  document.addEventListener("change", function (e) {
+    var t = e.target;
+    if (t.name === "service") {
+      state.service = t.value;
+      state.finish = getService().finishes[0].id;
+      state.addons = {};
+      renderFinishes(); renderPresets(); renderAddons();
+      var p = PRESETS[state.service];
+      if (p && p[0]) $("pcc-sqft").value = p[Math.min(1, p.length - 1)][1];
+    } else if (t.name === "finish") {
+      state.finish = t.value;
+    } else if (t.hasAttribute && t.hasAttribute("data-addon")) {
+      var key = t.getAttribute("data-addon");
+      state.addons[key] = t.checked;
+      var lfBox = $("pcc-lf-" + key);
+      if (lfBox) lfBox.classList.toggle("is-open", t.checked);
+    }
+    calculate();
+  });
+
+  document.addEventListener("input", function (e) {
+    var t = e.target;
+    if (t.id === "pcc-sqft") calculate();
+    if (t.id === "pcc-len" || t.id === "pcc-wid") {
+      var l = parseFloat($("pcc-len").value), w = parseFloat($("pcc-wid").value);
+      if (l > 0 && w > 0) { $("pcc-sqft").value = Math.round(l * w); calculate(); }
+    }
+    if (t.hasAttribute && t.hasAttribute("data-lf")) { state.lf[t.getAttribute("data-lf")] = t.value; calculate(); }
+  });
+
+  $("pcc-presets").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-sqft]");
+    if (!b) return;
+    $("pcc-sqft").value = b.getAttribute("data-sqft");
+    calculate();
+  });
+
+  $("pcc-lw-toggle").addEventListener("click", function () {
+    var box = $("pcc-lw"), open = !box.classList.contains("is-open");
+    box.classList.toggle("is-open", open);
+    this.setAttribute("aria-expanded", String(open));
+  });
+
+  $("pcc-form").addEventListener("submit", function (e) { e.preventDefault(); });
+
+  /* ---------- init ---------- */
+  renderServices(); renderFinishes(); renderPresets(); renderAddons(); renderTable(); calculate();
+})();
+</script>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px"><img src="/images/logo-light.png" alt="Miami Polished Concrete" height="32"></div>
+        <p>Polished concrete for homes and businesses across Miami-Dade.</p>
+        <p style="margin-top:14px"><strong style="color:#fff">Call:</strong> <a href="tel:+13055550142">(305) 555-0142</a></p>
+        <p><strong style="color:#fff">Hours:</strong> Mon to Sat, 8am to 6pm</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="/polished-concrete/">Polished Concrete</a></li><li><a href="/residential-polished-concrete/">Residential</a></li><li><a href="/commercial-polished-concrete/">Commercial &amp; Warehouse</a></li><li><a href="/microcement/">Microcement</a></li><li><a href="/epoxy-flooring/">Epoxy Flooring</a></li><li><a href="/garage-floors/">Garage Floors</a></li><li><a href="/concrete-resurfacing/">Concrete Resurfacing</a></li><li><a href="/pool-deck-resurfacing/">Pool Deck Resurfacing</a></li><li><a href="/services/">View All Services</a></li></ul>
+      </div>
+      <div>
+        <h4>Areas Covered</h4>
+        <ul><li><a href="/areas/doral/">Doral</a></li><li><a href="/areas/brickell/">Brickell</a></li><li><a href="/areas/miami-beach/">Miami Beach</a></li><li><a href="/areas/coral-gables/">Coral Gables</a></li><li><a href="/areas/kendall/">Kendall</a></li><li><a href="/areas/homestead/">Homestead</a></li><li><a href="/areas/">All Areas</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/how-it-works/">How It Works</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/cost-calculator/">Cost Calculator</a></li>
+          <li><a href="/guides/polished-concrete-cost-miami/">Cost Guide</a></li>
+          <li><a href="/guides/asbestos-floor-tile-miami/">Asbestos Guide</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclosure">Miami Polished Concrete is a lead generation website. We don't carry out work ourselves. Every job is quoted and completed by an independent, licensed and insured contractor, who pays us for the enquiries we send. You pay us nothing. <a href="/how-it-works/">How this works</a>.</p>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Miami Polished Concrete. All rights reserved.</span>
+      <span>Miami-Dade County, Florida</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+13055550142" style="color:#fff">&#128222; Call Now: (305) 555-0142</a>
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
