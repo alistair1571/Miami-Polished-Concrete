@@ -1,0 +1,10 @@
+# Repo files that shouldn't be published as part of the website
+.git
+.github
+.assetsignore
+.nojekyll
+wrangler.jsonc
+README.md
+CNAME
+node_modules
+.DS_Store
